@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass Button Sender</title>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <div class="glass-panel">
+            <h1>ارسال دکمه شیشه‌ای به تلگرام</h1>
+            
+            <div class="form-group">
+                <label for="channelId">آیدی چنل (مثال: @mychannel یا -1001234567890):</label>
+                <input type="text" id="channelId" placeholder="@mychannel" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="buttonText">متن دکمه:</label>
+                <input type="text" id="buttonText" placeholder="کلیک کنید" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="buttonUrl">لینک دکمه:</label>
+                <input type="url" id="buttonUrl" placeholder="https://example.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="messageText">متن پیام:</label>
+                <textarea id="messageText" placeholder="متن پیام همراه با دکمه" required></textarea>
+            </div>
+            
+            <button class="glass-button" onclick="sendGlassButton()">
+                ارسال دکمه شیشه‌ای
+            </button>
+            
+            <div id="status" class="status"></div>
+        </div>
+        
+        <div class="info-panel">
+            <h3>راهنمای استفاده:</h3>
+            <ul>
+                <li>ربات باید ادمین چنل مورد نظر باشد</li>
+                <li>برای چنل‌های عمومی از @ استفاده کنید (مثال: @mychannel)</li>
+                <li>برای چنل‌های خصوصی از آیدی عددی استفاده کنید</li>
+                <li>لینک ربات: 
+                    <span class="copy-link" onclick="copyToClipboard('https://t.me/glass_button_robot')" title="کلیک برای کپی">
+                        @glass_button_robot
+                    </span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="warning-panel">
+            <h3>⚠️ نکات امنیتی مهم:</h3>
+            <ul>
+                <li><strong>هیچ داده‌ای ذخیره نمی‌شود</strong> - تمام اطلاعات فقط موقتی است</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
