@@ -241,6 +241,69 @@ textarea {
     color: #ffb74d;
 }
 
+.button-group {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.button-group h4 {
+    color: #e0e0e0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+select {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: clamp(14px, 2vw, 16px);
+    font-family: 'Vazirmatn', sans-serif;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+select:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+select option {
+    background: #1a1a1a;
+    color: #ffffff;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-left: 10px;
+    accent-color: rgba(255, 255, 255, 0.8);
+}
+
+label small {
+    display: block;
+    color: #888;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.security-notice {
+    background: rgba(76, 175, 80, 0.1);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    color: #81c784;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
 /* Mobile First Responsive Design */
 @media (max-width: 480px) {
     .container {

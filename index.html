@@ -19,13 +19,34 @@
             </div>
             
             <div class="form-group">
-                <label for="buttonText">متن دکمه:</label>
-                <input type="text" id="buttonText" placeholder="کلیک کنید" required>
+                <div class="security-notice">
+                    🔒 <strong>بررسی مالکیت اجباری:</strong> قبل از ارسال دکمه، مالکیت شما نسبت به کانال بررسی خواهد شد
+                </div>
             </div>
             
             <div class="form-group">
-                <label for="buttonUrl">لینک دکمه:</label>
-                <input type="url" id="buttonUrl" placeholder="https://example.com" required>
+                <label for="buttonCount">تعداد دکمه‌ها:</label>
+                <select id="buttonCount" onchange="updateButtonFields()">
+                    <option value="1">یک دکمه</option>
+                    <option value="2">دو دکمه</option>
+                    <option value="3">سه دکمه</option>
+                    <option value="4">چهار دکمه</option>
+                    <option value="5">پنج دکمه</option>
+                </select>
+            </div>
+            
+            <div id="buttonsContainer">
+                <div class="button-group" data-index="1">
+                    <h4>دکمه ۱:</h4>
+                    <div class="form-group">
+                        <label>متن دکمه:</label>
+                        <input type="text" class="button-text" placeholder="کلیک کنید" required>
+                    </div>
+                    <div class="form-group">
+                        <label>لینک دکمه:</label>
+                        <input type="url" class="button-url" placeholder="https://example.com" required>
+                    </div>
+                </div>
             </div>
             
             <div class="form-group">
